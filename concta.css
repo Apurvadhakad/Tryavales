@@ -1,0 +1,230 @@
+
+*{
+    
+    padding: 0px;
+    font-family: century;
+}
+header{
+    background-image:url(premium_photo-1673697239981-389164b7b87f.jpeg);
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5),url(premium_photo-1673697239981-389164b7b87f.jpeg));
+    height: 100vh;
+    background-size:cover ;
+    background-position:center ;
+    min-height: 100px;
+}
+ul{
+    list-style-type: none;
+    margin-top: 10px;
+    min-height: 90px;
+    font-size: 16px;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding:  5px 20px;
+    border: 1px solid transparent;
+    transition-duration: 0.5 ease;
+}
+ul li a:hover{
+    background-color: white;
+    color: #000;
+}
+ul li.active a{
+    background-color: white;
+    color: #000;
+}
+#logo img{
+    float: left;
+    width:150px;
+   height: auto;
+}
+#main{
+    max-width:1387px ;
+    margin: auto;
+
+}
+#footer{
+    margin: 80px 0 10px;
+    text-align: center;
+}
+#footer a{
+    text-decoration: none;
+    color: #999;
+    font-size: 22px;
+    margin: 0 10px;
+}
+#footer hr{
+    background: #999;
+    height: 1px;
+    width: 100%;
+    border: 0;
+    margin: 20px 0;
+}
+#footer p{
+    padding-bottom:15px;
+}
+/*-----listing page---*/
+#main{
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+}
+#main ul li a{
+    text-decoration: none;
+    color:black;
+    padding:  5px 20px;
+    border: 1px solid transparent;
+    transition-duration: 0.5 ease;
+}   
+#btn{
+    padding: 5px;
+    background: #ff5361;
+    color: #fff;
+    border-radius: 10px;
+}
+#btn a:hover{
+    background-color:yellow;
+}
+
+#list-container{
+    margin-left: 65px;
+    margin-top: 50px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#left-col{
+    flex-basis:70%;
+}
+#roght-col{
+    flex-basis:25%;
+}
+#left-col h1{
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+#house{
+    padding: 30px 0;
+    border-top:1px solid #ccc;
+}
+#house img{
+    flex-basis:40px;
+}
+#house-info{
+     padding: 20px;
+     display: inline-block;
+    color: #555;   
+}
+
+#house img{
+
+    width: 40%;
+    border-radius: 12px;
+}
+#house-info h3{
+    font-weight: 600;
+    color: #333;
+    font-size: 22px;
+    margin: 4px 0;
+}
+#house-info i{
+    color: #ff5361;
+    font-size: 18px;
+    margin: 10px 1px;
+}
+#house-price{
+    text-align: right;
+}
+#house-price h4{
+    font-size: 20px;
+}
+#house-price h4 span{
+    font-size: 16px;
+    font-weight: 500;
+}
+#sidebar{
+    border: 1px solid #999;
+    padding: 20px 30px;
+    margin: 30px;
+}
+#sidebar h2{
+    font-weight: 500;
+}
+#sidebar h3{
+    font-weight: 500;
+    margin: 20px 0 10px;
+
+}
+#filter{
+    display: flex;
+    align-items: center;
+    color: #555;
+    margin-bottom: 10px;
+}
+#filter p{
+    flex: 1;
+}
+#filter input {
+    margin-right: 15px;
+    cursor: pointer;
+}
+#sidebar-link{
+    text-align: right;
+    margin: 20px 0;
+}
+#sidebar-link a{
+    text-decoration: none;
+}
+#pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#pagination img{
+    width: 15px;
+    margin: 10px 20px;
+}
+#right-arrow{
+    transform: rotate(180deg);
+}
+#pagination span{
+    margin: 10px 8px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#current{
+    background:#333;
+    color:#fff
+}
+/* --------small screen of listing page------- */
+
+@media only screen and (max-width:700px){
+    #list-container{
+        margin-top: 150px;
+    }
+    #left-col, #right-col,#house-img,#house-info{
+        flex-basis:100%;
+    }
+    #house-info h3{
+        font-size: 22px;
+    }
+    #house-info i{
+        font-size: 16px;
+    }
+    #pagination span{
+        margin: 10px 2px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 12px;
+    }
+}

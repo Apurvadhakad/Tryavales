@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="register1.css">
+</head>
+<body>
+    <div id="wrapper">
+        <form action="" onsubmit="register(event)">
+            <h1>Registretion</h1>
+
+            <div id="input-box">
+                <input type="text" id="username" placeholder="Username" required>         
+            </div>
+
+            <div id="input-box">
+                
+                <input type="@email" id="email" placeholder="Email" required>         
+            </div>
+
+            <div id="input-box">
+                
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+
+            <div id="rememder-forgot">
+                <label><input type="checkbox" required>Agree to term & condition</label>
+            </div>     
+            <button type="submit" id="btn">Register</button>
+
+            
+            <div id="register-link">
+                <p>Alresdy have an accoun? <a href="file:///C:/Websaite.html/log.html">Login</a></p>
+            </div>
+        </form>
+
+        <script>
+            function register(event) {
+                event.preventDefault(); 
+
+                const user = {
+                    username: document.getElementById("username").value,
+                    email: document.getElementById("email").value,
+                    password: document.getElementById("password").value
+                };
+
+                localStorage.setItem("user", JSON.stringify(user));
+                alert("Registered!");
+                window.location.href = "file:///C:/Websaite.html/log.html";
+            }
+        </script>
+    </div>
+</body>
+</html>
